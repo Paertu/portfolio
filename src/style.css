@@ -1,0 +1,58 @@
+:root {
+    --steam-bg-color: #171a21;
+    --steam-text-color: #c7d5e0;
+    font-family: Arial, sans-serif;
+}
+
+/*PAGE*/
+body {
+    background-color: var(--steam-bg-color);
+    color: var(--steam-text-color);
+    margin: 0;
+}
+
+/*PROFILE HEADER*/
+.profile-header {
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 24px 12px 24px 24px;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    max-width: 976px;
+}
+
+.profile-pfp-container {
+    position: relative;
+    width: 164px;
+    height: 164px;
+}
+
+.profile-frame img{
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 200px;
+    height: 200px;
+}
+
+.persona-name {
+    display: flex;
+    font-size: 26px;
+    margin: 0 0 5px 0;
+    font-weight: normal;
+}
+
+.real-name-flag {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.profile-location {
+    margin: 0;
+    font-size: 14px;
+}
+
+/*PROFILE CONTENT*/
