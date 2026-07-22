@@ -2,13 +2,23 @@
     --steam-bg-color: #171a21;
     --steam-text-color: #c7d5e0;
     font-family: Arial, sans-serif;
+    --gradient-background: linear-gradient(47deg,rgba(239, 65, 12, 0.7) 0%, rgba(58, 44, 122, 0.7) 21%, rgba(58, 44, 122, 0.7) 81%, rgba(232, 63, 12, 0.7) 100%);
 }
 
 /*PAGE*/
 body {
-    background-color: var(--steam-bg-color);
+    background-image: url(HAoCRbEa0AAJ-JU.jpg);
     color: var(--steam-text-color);
     margin: 0;
+}
+
+#background-video {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
 }
 
 /*PROFILE HEADER*/
@@ -18,7 +28,7 @@ body {
     margin-right: 15%;
     padding: 24px 12px 24px 24px;
     gap: 20px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-image: var(--gradient-background);
     max-width: 976px;
 }
 
@@ -34,6 +44,11 @@ body {
     left: -15px;
     width: 200px;
     height: 200px;
+}
+
+.persona-container {
+    padding-left: 1rem;
+    max-width: 50%;
 }
 
 .persona-name {
@@ -55,4 +70,19 @@ body {
     font-size: 14px;
 }
 
+.badge-info-container {
+    padding: inherit;
+    width: 15rem;
+}
+
+.badge-background {
+    display: flex;
+    align-items: center;
+    background-color: rgba(24, 24, 24, 0.7);
+    border-radius: 5%;
+}
+.badge-info-text {
+    align-items: center;
+    padding-right: 20%;
+}
 /*PROFILE CONTENT*/
