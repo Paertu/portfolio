@@ -3,7 +3,9 @@
     --steam-text-color: #c7d5e0;
     font-family: Arial, sans-serif;
     --gradient-background: linear-gradient(47deg,rgba(239, 65, 12, 0.7) 0%, rgba(58, 44, 122, 0.7) 21%, rgba(58, 44, 122, 0.7) 81%, rgba(232, 63, 12, 0.7) 100%);
-    --gradient-content-background: radial-gradient(circle,rgba(239, 65, 12, 0.7) 0%, rgba(58, 44, 122, 0.7) 21%, rgba(58, 44, 122, 0.7) 81%, rgba(232, 63, 12, 0.7) 100%);
+    --gradient-header-background: linear-gradient(47deg,rgba(239, 65, 12, 1) 2%, rgba(58, 44, 122, 1) 55%, rgba(58, 44, 122, 1) 100%);
+    --customization-container-background: linear-gradient(47deg,rgba(239, 65, 12, 0.7) 2%, rgba(58, 44, 122, 0.7) 100%);
+
 }
 
 /*PAGE*/
@@ -22,15 +24,19 @@ body {
     z-index: -1;
 }
 
+.steam-profile-background {
+    background-image: var(--gradient-background);
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 24px 12px 24px 24px;
+    max-width: 1000px;
+
+}
+
 /*PROFILE HEADER*/
 .profile-header {
     display: flex;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding: 24px 12px 24px 24px;
     gap: 20px;
-    background-image: var(--gradient-background);
-    max-width: 976px;
 }
 
 .profile-pfp-container {
@@ -49,7 +55,8 @@ body {
 
 .persona-container {
     padding-left: 1rem;
-    max-width: 450px;
+    min-width: 550px;
+    max-width: 350px;
 }
 
 .persona-name {
@@ -72,10 +79,7 @@ body {
 }
 
 .badge-info-container {
-    width: 15rem;
-    min-width: 300px;
-    margin-left: auto;
-    padding-left: 0px;
+    width: 100%;
 }
 
 .badge-background {
@@ -83,6 +87,8 @@ body {
     align-items: center;
     background-color: rgba(24, 24, 24, 0.7);
     border-radius: 5%;
+    max-width: 15rem;
+    
 }
 .badge-info-text {
     align-items: center;
@@ -91,31 +97,40 @@ body {
 /*PROFILE CONTENT*/
 .profile-content {
     display: flex;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding: 24px 12px 24px 24px;
+    padding-top: 50px;
     gap: 20px;
-    background-image: var(--gradient-content-background);
-    max-width: 976px;   
 }
-.about-section {
+.info-field {
+    background-color: rgba(24, 24, 24, 0.7);
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+}
+.info-text {
+}
+.customization-container-background {
+    background-image: var(--customization-container-background);
+    padding: 15px 5px 15px 5px;
+    margin-bottom: 20px;
+    border-radius: 0px 0px 5px 5px;
+}
 
-}
-.customization-container {
-
-}
 .customization-header {
     display: flex;
-    background-image: var(--gradient-background);
-    min-width: 650px; 
+    background-image: var(--gradient-header-background);
+    min-width: 750px; 
+    border-radius: 5px 5px 0px 0px;
 }
 .customization-header-text {
     padding-left: 3%;
 }
 .profile-sidebar {
-    padding-left: 3%;
+    padding-left: 2%;
     display: flex;
-    align-items: center;
+    align-items: self-start;
     background-color: rgba(0, 0, 0, 0.3);
-    width: 100%
+    width: 400px;
+    border-radius: 5px 5px 5px 5px;
+}
+.online-text {
+
 }
