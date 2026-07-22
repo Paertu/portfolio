@@ -3,6 +3,7 @@
     --steam-text-color: #c7d5e0;
     font-family: Arial, sans-serif;
     --gradient-background: linear-gradient(47deg,rgba(239, 65, 12, 0.7) 0%, rgba(58, 44, 122, 0.7) 21%, rgba(58, 44, 122, 0.7) 81%, rgba(232, 63, 12, 0.7) 100%);
+    --gradient-content-background: radial-gradient(circle,rgba(239, 65, 12, 0.7) 0%, rgba(58, 44, 122, 0.7) 21%, rgba(58, 44, 122, 0.7) 81%, rgba(232, 63, 12, 0.7) 100%);
 }
 
 /*PAGE*/
@@ -86,3 +87,33 @@ body {
     padding-right: 20%;
 }
 /*PROFILE CONTENT*/
+.profile-content {
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 24px 12px 24px 24px;
+    gap: 20px;
+    background-image: var(--gradient-content-background);
+    max-width: 976px;   
+}
+.about-section {
+
+}
+.customization-container {
+
+}
+.customization-header {
+    display: flex;
+    background-image: var(--gradient-background);
+    min-width: 500px; 
+}
+.customization-header-text {
+    padding-left: 3%;
+}
+.profile-sidebar {
+    padding-left: 3%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%
+}
