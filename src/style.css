@@ -102,7 +102,7 @@ body {
 }
 .info-field {
     background-color: rgba(24, 24, 24, 0.7);
-    padding: 5px 5px 5px 5px;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     border-radius: 5px;
 }
 .info-text {
